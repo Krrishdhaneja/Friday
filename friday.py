@@ -36,13 +36,10 @@ def greetMe():
 
 greetMe()
 
-speak("what\'s the password")
-k = str(input("password:"))
-if "just a rather very intelligent system" in k:
-    speak("welcome back ,  sir")
-    speak('what can I do for you ,  sir')
-else:
-    sys.exit()
+
+speak("welcome ,  sir")
+speak('what can I do for you ,  sir')
+
 
 
 #speak('what can i do for you , sir')
