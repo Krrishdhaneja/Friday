@@ -1,2 +1,2 @@
-# Virtual-Assistants
-**_All virtual assistants made by me in python_**
+# Virtual-Assistant
+**_Virtual assistant made by me in python_**
