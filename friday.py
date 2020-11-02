@@ -148,6 +148,44 @@ if __name__ == '__main__':
             d = str(input("what is the new item:"))
             speak("things added")
 
+        elif 'repeat me' in query or 'repeat what i say' in query:
+            speak('what should i repeat ?')
+            aq = myCommand()
+            speak(aq)
+
+        elif 'change your voice' in query:
+            engine.setProperty('voice', voices[1].id)
+            speak("Is this voice ok ? speak yes or no")
+            abc = myCommand()
+            if "yes" in abc:
+                speak('ok , sir')
+            if 'no' in abc:
+                speak('changing the voice ....')
+                engine.setProperty('voice', voices[0].id)
+                speak('voice changed')
+
+        elif 'change your voice to male' in query:
+            engine.setProperty('voice', voices[1].id)
+            speak("Is this voice ok ? speak yes or no")
+            abg = myCommand()
+            if "yes" in abg:
+                speak('ok , sir')
+            if 'no' in abg:
+                speak('changing the voice ....')
+                engine.setProperty('voice', voices[0].id)
+                speak('voice changed')
+
+        elif 'change your voice to female' in query:
+            engine.setProperty('voice', voices[0].id)
+            speak("Is this voice ok ? speak yes or no")
+            abg = myCommand()
+            if "yes" in abg:
+                speak('ok , sir')
+            if 'no' in abg:
+                speak('changing the voice ....')
+                engine.setProperty('voice', voices[1].id)
+                speak('voice changed')
+
        # elif "what\'s in my list" in query or "what is in my list" in query:
           #  speak("now telling list items")
 
