@@ -37,7 +37,7 @@ def greetMe():
 greetMe()
 
 
-speak("welcome ,  sir")
+
 speak('what can I do for you ,  sir')
 
 
