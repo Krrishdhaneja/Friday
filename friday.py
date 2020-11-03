@@ -214,8 +214,7 @@ if __name__ == '__main__':
                 print(" City Not Found ")
 
 
-    # elif "what\'s in my list" in query or "what is in my list" in query:
-          #  speak("now telling list items")
+
 
         else:
             query = query
