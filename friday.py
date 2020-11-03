@@ -8,7 +8,8 @@ import datetime
 import wolframalpha
 import os
 import sys
-import requests, json
+import requests
+import json
 import time
 
 api_key = "e7bcb44e803e558ca3b74aaf5a37b41c"
