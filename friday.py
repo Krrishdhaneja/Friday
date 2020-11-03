@@ -139,7 +139,10 @@ if __name__ == '__main__':
             speak('Bye Sir, have a good day.')
             sys.exit()
 
-
+        elif 'what\'s the time' in query:
+            time1 = str(datetime.datetime.now().hour)
+            time2 = str(datetime.datetime.now().minute)
+            speak('it is ' + time1 +' : '+ time2)
 
         elif "make a list" in query:
             speak("ok sir")
