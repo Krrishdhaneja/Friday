@@ -8,6 +8,11 @@ import datetime
 import wolframalpha
 import os
 import sys
+import requests, json
+import time
+
+api_key = "e7bcb44e803e558ca3b74aaf5a37b41c"
+base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
 engine = pyttsx3.init('sapi5')
 
@@ -24,10 +29,10 @@ def speak(audio):
 
 def greetMe():
     currentH = int(datetime.datetime.now().hour)
-    if currentH >= 0 and currentH < 12:
+    if 0 <= currentH < 12:
         speak('Good Morning! , sir')
 
-    if currentH >= 12 and currentH < 18:
+    if 12 <= currentH < 18:
         speak('Good Afternoon! , sir')
 
     if currentH >= 18 and currentH != 0:
@@ -38,11 +43,11 @@ greetMe()
 
 
 
-speak('what can I do for you ,  sir')
+speak('what can I do for you , sir')
 
 
 
-#speak('what can i do for you , sir')
+
 
 def myCommand():
 
@@ -134,9 +139,7 @@ if __name__ == '__main__':
             speak('Bye Sir, have a good day.')
             sys.exit()
 
-        elif 'change your voice' in query:
-            os.startfile('jarvis.py')
-            sys.exit()
+
 
         elif "make a list" in query:
             speak("ok sir")
@@ -186,7 +189,32 @@ if __name__ == '__main__':
                 engine.setProperty('voice', voices[1].id)
                 speak('voice changed')
 
-       # elif "what\'s in my list" in query or "what is in my list" in query:
+        elif 'what\'s the weather like today' in query or 'what is the weather outside' in query:
+            speak('of which city you want to know the weather of')
+            city_name = myCommand()
+            complete_url = base_url + "appid=" + api_key + "&q=" + city_name
+            response = requests.get(complete_url)
+            x = response.json()
+            if x["cod"] != "404":
+                y = x["main"]
+                current_temperature = y["temp"]
+                current_pressure = y["pressure"]
+                current_humidity = y["humidity"]
+                z = x["weather"]
+                weather_description = z[0]["description"]
+                speak(" Temperature (in Celsius): " +
+                      str(current_temperature - 273) +
+                      "\n atmospheric pressure (in hPa unit): " +
+                      str(current_pressure) +
+                      "\n humidity (in percentage): " +
+                      str(current_humidity) +
+                      "\n description: " +
+                      str(weather_description))
+            else:
+                print(" City Not Found ")
+
+
+    # elif "what\'s in my list" in query or "what is in my list" in query:
           #  speak("now telling list items")
 
         else:
