@@ -42,16 +42,10 @@ def greetMe():
 
 greetMe()
 
-
-
 speak('what can I do for you , sir')
 
 
-
-
-
 def myCommand():
-
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
@@ -86,7 +80,7 @@ if __name__ == '__main__':
         elif 'open gmail' in query:
             speak('okay')
             webbrowser.open('www.gmail.com')
-        
+
         elif 'open github' in query:
             speak('okay')
             webbrowser.open('www.github.com')
@@ -120,13 +114,13 @@ if __name__ == '__main__':
             speak('which operator')
             q = myCommand()
             if 'minus' in q or 'Minus' in q or '-' in q:
-                print(d1-t1)
+                print(d1 - t1)
             elif 'plus' in q or 'Plus' in q or '+' in q:
-                print(d1+t1)
+                print(d1 + t1)
             elif 'multiply' in q or 'Multiply' or 'x' in q or '*' in q:
-                print(d1*t1)
+                print(d1 * t1)
             elif 'divide' in q or 'Divide' in q or '/' in q:
-                print(d1/t1)
+                print(d1 / t1)
 
         elif 'nothing' in query or 'abort' in query or 'stop' in query or 'no' in query:
             speak('okay')
@@ -143,7 +137,7 @@ if __name__ == '__main__':
         elif 'what\'s the time' in query:
             time1 = str(datetime.datetime.now().hour)
             time2 = str(datetime.datetime.now().minute)
-            speak('it is ' + time1 +' : '+ time2)
+            speak('it is ' + time1 + ' : ' + time2)
 
         elif "make a list" in query:
             speak("ok sir")
