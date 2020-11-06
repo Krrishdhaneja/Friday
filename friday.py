@@ -92,35 +92,35 @@ if __name__ == '__main__':
 
         elif "hey friday" in query:
             # speak(greetMe())
-            k = ["what can i do for you , sir", "how can i help you"]
-            speak(random.choice(k))
+            help = ["what can i do for you , sir", "how can i help you"]
+            speak(random.choice(help))
 
         elif 'search' in query or 'do a search' in query:
             speak('what should I search for ?  sir')
-            ab = myCommand()
+            search1 = myCommand()
             chrome_path = r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe %s'
-            for url in search(ab, tld="co.in", num=1, stop=1, pause=2):
-                webbrowser.open("https://google.com/search?q=%s" % ab)
+            for url in search(search1, tld="co.in", num=1, stop=1, pause=2):
+                webbrowser.open("https://google.com/search?q=%s" % search1)
             speak('done , sir')
 
         elif "do calculations" in query or 'do some calculations' in query:
             speak("ok , sir")
             speak("which is the first number")
-            d = myCommand()
-            d1 = float(d)
+            num1 = myCommand()
+            num11 = float(num1)
             speak("which is the second number")
-            t = myCommand()
-            t1 = float(t)
+            num2 = myCommand()
+            num22 = float(num2)
             speak('which operator')
             q = myCommand()
             if 'minus' in q or 'Minus' in q or '-' in q:
-                print(d1 - t1)
+                print(num11 - num22)
             elif 'plus' in q or 'Plus' in q or '+' in q:
-                print(d1 + t1)
+                print(num11 + num22)
             elif 'multiply' in q or 'Multiply' or 'x' in q or '*' in q:
-                print(d1 * t1)
+                print(num11 * num22)
             elif 'divide' in q or 'Divide' in q or '/' in q:
-                print(d1 / t1)
+                print(num11 / num22)
 
         elif 'nothing' in query or 'abort' in query or 'stop' in query or 'no' in query:
             speak('okay')
@@ -135,32 +135,32 @@ if __name__ == '__main__':
             sys.exit()
 
         elif 'what\'s the time' in query:
-            time1 = str(datetime.datetime.now().hour)
-            time2 = str(datetime.datetime.now().minute)
-            speak('it is ' + time1 + ' : ' + time2)
+            hours = str(datetime.datetime.now().hour)
+            minutes = str(datetime.datetime.now().minute)
+            speak('it is ' + hours + ' : ' + minutes)
 
         elif "make a list" in query:
             speak("ok sir")
-            p = str(input("what is the item:"))
+            list3 = str(input("what is the item:"))
             speak("things added")
 
         elif "add items in my list" in query:
             speak("ok sir")
-            d = str(input("what is the new item:"))
+            list2 = str(input("what is the new item:"))
             speak("things added")
 
         elif 'repeat me' in query or 'repeat what i say' in query:
             speak('what should i repeat ?')
-            aq = myCommand()
-            speak(aq)
+            repeat = myCommand()
+            speak(repeat)
 
         elif 'change your voice' in query:
             engine.setProperty('voice', voices[1].id)
             speak("Is this voice ok ? speak yes or no")
-            abc = myCommand()
-            if "yes" in abc:
+            voice1 = myCommand()
+            if "yes" in voice1:
                 speak('ok , sir')
-            if 'no' in abc:
+            if 'no' in voice1:
                 speak('changing the voice ....')
                 engine.setProperty('voice', voices[0].id)
                 speak('voice changed')
@@ -168,10 +168,10 @@ if __name__ == '__main__':
         elif 'change your voice to male' in query:
             engine.setProperty('voice', voices[1].id)
             speak("Is this voice ok ? speak yes or no")
-            abg = myCommand()
-            if "yes" in abg:
+            voice3 = myCommand()
+            if "yes" in voice3:
                 speak('ok , sir')
-            if 'no' in abg:
+            if 'no' in voice3:
                 speak('changing the voice ....')
                 engine.setProperty('voice', voices[0].id)
                 speak('voice changed')
@@ -179,10 +179,10 @@ if __name__ == '__main__':
         elif 'change your voice to female' in query:
             engine.setProperty('voice', voices[0].id)
             speak("Is this voice ok ? speak yes or no")
-            abg = myCommand()
-            if "yes" in abg:
+            voice4 = myCommand()
+            if "yes" in voice4:
                 speak('ok , sir')
-            if 'no' in abg:
+            if 'no' in voice4:
                 speak('changing the voice ....')
                 engine.setProperty('voice', voices[1].id)
                 speak('voice changed')
