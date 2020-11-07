@@ -12,12 +12,12 @@ import requests
 import json
 import time
 
-api_key = "e7bcb44e803e558ca3b74aaf5a37b41c"
+api_key = "Your_api_key_here"
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
 engine = pyttsx3.init()
 
-client = wolframalpha.Client('EV3UUJ-ET9UTALAH3')
+client = wolframalpha.Client('Your_api_key_here')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
 
