@@ -15,7 +15,7 @@ import time
 api_key = "e7bcb44e803e558ca3b74aaf5a37b41c"
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
-engine = pyttsx3.init('sapi5')
+engine = pyttsx3.init()
 
 client = wolframalpha.Client('EV3UUJ-ET9UTALAH3')
 voices = engine.getProperty('voices')
