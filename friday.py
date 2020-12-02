@@ -12,12 +12,12 @@ import requests
 import json
 import time
 
-api_key = "e7bcb44e803e558ca3b74aaf5a37b41c"
+api_key = "Your_api_key_here"
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
-engine = pyttsx3.init('sapi5')
+engine = pyttsx3.init()
 
-client = wolframalpha.Client('EV3UUJ-ET9UTALAH3')
+client = wolframalpha.Client('Your_api_key_here')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
 
@@ -211,9 +211,15 @@ if __name__ == '__main__':
             else:
                 print(" City Not Found ")
 
+        elif 'make a new file' in query:
+            speak('please enter the file name')
+            file_name=str(input('File name:'))
+            open(file_name,"w+")
 
-
-
+        elif "delete a file" in query:
+            speak("please , write the full path of the file")
+            file_to_delete = str(input('Write the full path of the file to delete : '))
+            os.remove(file_to_delete)
 
         else:
             query = query
