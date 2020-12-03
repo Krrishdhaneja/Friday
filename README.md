@@ -1,5 +1,5 @@
-# **Virtual-Assistant**
-**_Virtual assistant made by me in python_**
+# **Friday**
+**_A Virtual assistant made by me in python_**
 
 # **Installation**
 ### **_In Order to run this program just run ```python -m pip install -r requirements.txt```_**
