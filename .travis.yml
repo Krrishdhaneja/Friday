@@ -23,6 +23,6 @@ jobs:
         - pip install --upgrade pip
         - pip install -r requirements.txt
       script: 
-        - python .\friday.py
+        - python ./friday.py
  
 
