@@ -1,7 +1,7 @@
 language: python            # this works for Linux but is an error on macOS or Windows
 jobs:
   include:
-    - name: "Python 3.8.0 on Bionic Linux"
+    - name: "Python 3.8.0 on Xenial Linux"
       python: 3.8           # this works for Linux but is ignored on macOS or Windows
     
     - name: "Python 3.8.0 on Windows"
@@ -15,6 +15,4 @@ install:
      - pip install --upgrade pip
      - pip install -r requirements.txt 
 script: 
-     - python3 friday.py || python friday.py
-     - pytest
-     - make test
+     - python friday.py
