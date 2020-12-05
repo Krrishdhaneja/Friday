@@ -15,4 +15,4 @@ install:
      - pip install --upgrade pip
      - pip install -r requirements.txt 
 script: 
-     - python friday.py
+     - friday.py
