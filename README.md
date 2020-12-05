@@ -1,6 +1,8 @@
 # **Friday**
 **_A Virtual assistant made by me in python_**
 
+[![Build Status](https://travis-ci.com/Krrishdhaneja/Friday.svg?branch=master)](https://travis-ci.com/Krrishdhaneja/Friday)
+
 # **Installation**
 _In Order to run this program just run ```python -m pip install -r requirements.txt```_
 
