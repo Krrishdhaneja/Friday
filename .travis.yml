@@ -2,10 +2,13 @@ language: python            # this works for Linux but is an error on macOS or W
 jobs:
   include:
     - name: "Python 3.8.0 on Xenial Linux"
-      python: 3.8 
+      python: 3.8
       install: 
-        - pip install --upgrade pip
-        - pip install -r requirements.txt
+        - pip3 install --upgrade pip
+        - sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
+        - sudo apt-get install ffmpeg libav-tools
+        - sudo apt-get install python3-pyaudio
+        - pip3 install -r requirements.txt
       script: 
         - chmod +x friday.py
         - python3 ./friday.py
@@ -21,6 +24,9 @@ jobs:
       env: PATH=/c/Python38:/c/Python38/Scripts:$PATH
       install: 
         - pip install --upgrade pip
+        - pip install pipwin
+        - pipwin install pyaudio
+        - pipwin install pyaudio
         - pip install -r requirements.txt
       script: 
         - python ./friday.py
