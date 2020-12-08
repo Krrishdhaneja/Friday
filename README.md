@@ -2,7 +2,7 @@
 **_A Virtual assistant made by me in python_**
 
 [![Build Status](https://travis-ci.com/Krrishdhaneja/Friday.svg?branch=master)](https://travis-ci.com/Krrishdhaneja/Friday)
-[![Build Status](https://dev.azure.com/krrish21march/krrish21march/_apis/build/status/krrish21march?branchName=master)](https://dev.azure.com/krrish21march/krrish21march/_build/latest?definitionId=2&branchName=master)
+[![Build Status](https://dev.azure.com/krrish21march/krrish21march/_apis/build/status/Krrishdhaneja.Friday%20(1)?branchName=master)](https://dev.azure.com/krrish21march/krrish21march/_build/latest?definitionId=3&branchName=master)
 
 # **Installation**
 _In Order to run this program just run ```python -m pip install -r requirements.txt```_
