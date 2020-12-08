@@ -1,7 +1,8 @@
+
 pyttsx3==2.90
-google==2.0.3
+google==3.0.0
 SpeechRecognition==3.8.1
 wikipedia==1.4.0
-wolframalpha==4.0.0
+wolframalpha==4.1.1
 DateTime==4.3
-requests==2.22.0
+requests==2.25.0
