@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='virtual-assistant',
-    version='1.3',
+    version='1.3.3',
     packages=[],
     url='https://github.com/Krrishdhaneja/virtual-assistant',
     license='GPL-3.0',
