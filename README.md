@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.com/Krrishdhaneja/Friday.svg?branch=master)](https://travis-ci.com/Krrishdhaneja/Friday)
 [![Build Status](https://dev.azure.com/krrish21march/krrish21march/_apis/build/status/Krrishdhaneja.Friday%20(1)?branchName=master)](https://dev.azure.com/krrish21march/krrish21march/_build/latest?definitionId=3&branchName=master)
 ![Python package](https://github.com/Krrishdhaneja/Friday/workflows/Python%20package/badge.svg)
+![CodeQL](https://github.com/Krrishdhaneja/Friday/workflows/CodeQL/badge.svg)
 
 # **Installation**
 _In Order to run this program just run ```python -m pip install -r requirements.txt```_
