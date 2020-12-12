@@ -11,10 +11,14 @@ In Order to run this program just run ```python -m pip install -r requirements.t
 ## **On Linux**
 In Order to run this on Ubuntu or Debian based distros run this ->
 
-  `1. sudo apt-get installlibasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 libespeak1
-   2. sudo apt-get install ffmpeg libav-tools
-   3. pip3 install pyaudio
-   4. pip3 install -r requirements.txt`
+     sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 libespeak1
+   
+     sudo apt-get install ffmpeg libav-tools
+   
+     pip3 install pyaudio
+   
+     pip3 install -r requirements.txt
+   
 
 ## **On Windows**
 In Order to run this on Windows run this->
