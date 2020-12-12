@@ -12,7 +12,7 @@ import requests
 import json
 import time
 
-api_key = "Your_api_key_here"
+api_key = "Your_api_key"
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
 engine = pyttsx3.init()
