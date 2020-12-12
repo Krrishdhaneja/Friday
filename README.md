@@ -17,9 +17,9 @@ In Order to run this on Ubuntu or Debian based distros run this ->
    4. pip3 install -r requirements.txt`
 
 ## **On Windows**
-*In Order to run this on Windows run this->
+In Order to run this on Windows run this->
 
- `1. Open CMD and run python --version.`*
+ `1. Open CMD and run python --version.`
 
 
 # **Running this Program**
