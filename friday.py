@@ -19,7 +19,7 @@ engine = pyttsx3.init()
 
 client = wolframalpha.Client('Your_api_key_here')
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[0].id)
+engine.setProperty('voice', voices[1].id)
 
 
 def speak(audio):
@@ -155,7 +155,7 @@ if __name__ == '__main__':
             speak(repeat)
 
         elif 'change your voice' in query:
-            engine.setProperty('voice', voices[1].id)
+            engine.setProperty('voice', voices[0].id)
             speak("Is this voice ok ? speak yes or no")
             voice1 = myCommand()
             if "yes" in voice1:
@@ -166,7 +166,7 @@ if __name__ == '__main__':
                 speak('voice changed')
 
         elif 'change your voice to male' in query:
-            engine.setProperty('voice', voices[1].id)
+            engine.setProperty('voice', voices[0].id)
             speak("Is this voice ok ? speak yes or no")
             voice3 = myCommand()
             if "yes" in voice3:
@@ -177,7 +177,7 @@ if __name__ == '__main__':
                 speak('voice changed')
 
         elif 'change your voice to female' in query:
-            engine.setProperty('voice', voices[0].id)
+            engine.setProperty('voice', voices[1].id)
             speak("Is this voice ok ? speak yes or no")
             voice4 = myCommand()
             if "yes" in voice4:
