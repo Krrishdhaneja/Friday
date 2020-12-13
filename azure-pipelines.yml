@@ -39,10 +39,9 @@ steps:
          sudo apt-get install ffmpeg libav-tools
          sudo apt-get install python3-pyaudio
          pip3 install pyaudio
-         pip3 install -r requirements.txt
-  displayName:'installing dependencies'
+         pip3 install -r requirements.txt 
 
 - script: |
          chmod +x friday.py
          python3 ./friday.py
-  displayName:'finishing'
+  
