@@ -32,6 +32,7 @@ jobs:
         sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 libespeak1
         sudo apt-get install ffmpeg 
         sudo apt-get install python3-pyaudio
+        sudo apt-get install python-gnuradio-audio-portaudio
         pip install pyaudio
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         chmod +x friday.py
