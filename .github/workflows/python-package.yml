@@ -30,7 +30,7 @@ jobs:
         python3 -m pip install flake8 pytest
         sudo apt-get update
         sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 libespeak1
-        sudo apt-get install ffmpeg libav-tools
+        sudo apt-get install ffmpeg 
         sudo apt-get install python3-pyaudio
         pip install pyaudio
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
