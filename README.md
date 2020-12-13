@@ -7,7 +7,7 @@
 ![CodeQL](https://github.com/Krrishdhaneja/Friday/workflows/CodeQL/badge.svg)
 
 # **Installation**
-In Order to run this program just run ```python -m pip install -r requirements.txt```
+
 ## **On Linux**
 In Order to run this on Ubuntu or Debian based distros run this ->
 
