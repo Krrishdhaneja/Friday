@@ -24,7 +24,7 @@ In Order to run this on Ubuntu or Debian based distros run this ->
 In Order to run this on Windows run this->
 
  `1. Open CMD and run python --version.`
-   ![version.png](D:\version.png)
+   
 
 
 # **Running this Program**
