@@ -24,7 +24,7 @@ In Order to run this on Ubuntu or Debian based distros run this ->
 In Order to run this on Windows run this->
 
  `1. Open CMD and run python --version.`
-   ![version](https://drive.google.com/file/d/1aAcliAzfx_wi0FT5P6fj9sS9r809Dugn/view?usp=sharing)
+
 
 # **Running this Program**
  1. To run WolframAlpha in this program, just head over to [WolframAlpha](https://wolframalpha.com) and create an account there and go to your profile > then my api > then sign up to get an API > the just paste the api in the code.
