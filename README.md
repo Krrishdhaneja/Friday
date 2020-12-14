@@ -13,7 +13,7 @@ In Order to run this on Ubuntu or Debian based distros run this ->
 
      sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 libespeak1
    
-     sudo apt-get install ffmpeg libav-tools
+     sudo apt-get install ffmpeg 
    
      pip3 install pyaudio
    
@@ -24,6 +24,7 @@ In Order to run this on Ubuntu or Debian based distros run this ->
 In Order to run this on Windows run this->
 
  `1. Open CMD and run python --version.`
+   ![version.png](D:\version.png)
 
 
 # **Running this Program**
