@@ -1,7 +1,0 @@
-README.md
-friday.py
-setup.py
-virtual_assistant.egg-info/PKG-INFO
-virtual_assistant.egg-info/SOURCES.txt
-virtual_assistant.egg-info/dependency_links.txt
-virtual_assistant.egg-info/top_level.txt
