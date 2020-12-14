@@ -13,7 +13,7 @@ In Order to run this on Ubuntu or Debian based distros run this ->
 
      sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 libespeak1
    
-     sudo apt-get install ffmpeg libav-tools
+     sudo apt-get install ffmpeg 
    
      pip3 install pyaudio
    
