@@ -1,5 +1,6 @@
 .google-cookie
 *.log
-.idea\
-venv\
+.idea/
+venv/
+.vscode/
 
