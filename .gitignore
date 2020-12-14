@@ -1,5 +1,5 @@
-.google-cookie
-debug.log
-.idea
-venv
+*.google-cookie
+*debug.log
+*.idea
+*venv
 
