@@ -33,11 +33,15 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
-  displayName: 'Install dependencies'
+         pip3 install --upgrade pip
+         sudo apt-get update
+         sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 libespeak1
+         sudo apt-get install ffmpeg libav-tools
+         sudo apt-get install python3-pyaudio
+         pip3 install pyaudio
+         pip3 install -r requirements.txt 
 
 - script: |
-    pip install pytest pytest-azurepipelines
-    pytest
-  displayName: 'pytest'
+         chmod +x friday.py
+         python3 ./friday.py
+  

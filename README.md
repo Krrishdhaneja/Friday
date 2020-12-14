@@ -7,17 +7,23 @@
 ![CodeQL](https://github.com/Krrishdhaneja/Friday/workflows/CodeQL/badge.svg)
 
 # **Installation**
-_In Order to run this program just run ```python -m pip install -r requirements.txt```_
+
 ## **On Linux**
-*In Order to run this on Ubuntu or Debian based distros run this ->
-  `1. sudo apt-get installlibasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 libespeak1
-   2. sudo apt-get install ffmpeg libav-tools
-   3. pip3 install pyaudio
-   4. pip3 install -r requirements.txt`*
+In Order to run this on Ubuntu or Debian based distros run this ->
+
+     sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 libespeak1
+   
+     sudo apt-get install ffmpeg libav-tools
+   
+     pip3 install pyaudio
+   
+     pip3 install -r requirements.txt
+   
 
 ## **On Windows**
-*In Order to run this on Windows run this->
- `1. Open CMD and run python --version.`*
+In Order to run this on Windows run this->
+
+ `1. Open CMD and run python --version.`
 
 
 # **Running this Program**
