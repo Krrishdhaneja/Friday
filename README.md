@@ -22,8 +22,13 @@ In Order to run this on Ubuntu or Debian based distros run this ->
 
 ## **On Windows**
 In Order to run this on Windows run this->
+First open CMD or powershell then->
+     
+     pip install pipwin
 
- `1. Open CMD and run python --version.`
+     pipwin install pyaudio
+
+     pip install -r requirements.txt
 
 
 # **Running this Program**
