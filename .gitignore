@@ -5,7 +5,7 @@ friday2test.py
 venv/
 .vscode/
 .idea/
-
+gui.py
 
 
 
