@@ -1,9 +1,10 @@
 .google-cookie
 *.log
 .python-version
-.idea\
-venv\
-.vscode\
+
+venv/
+.vscode/
+.idea/
 
 
 
