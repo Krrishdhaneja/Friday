@@ -6,7 +6,7 @@ venv/
 .vscode/
 .idea/
 gui.py
-
+.venv
 
 
 venv/.gitignore
