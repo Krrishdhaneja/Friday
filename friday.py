@@ -12,6 +12,9 @@ import requests
 import json
 import time
 
+weather_api_key = "undefined"
+wolframalpha_api_key = "undefined"
+
 f = open("api_config.txt", "r")
 for i in f.readlines():
     if i.startswith("weather_api_key"):
