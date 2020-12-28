@@ -8,6 +8,7 @@ venv/
 gui.py
 .venv
 
+api_config.txt
 
 venv/.gitignore
 venv/pyvenv.cfg
