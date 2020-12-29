@@ -15,13 +15,17 @@ import time
 weather_api_key = "undefined"
 wolframalpha_api_key = "undefined"
 
-f = open("api_config.txt", "r")
-for i in f.readlines():
-    if i.startswith("weather_api_key"):
-        weather_api_key = i[i.index("=")+1:].strip()
-    if i.startswith("wolframalpha_api_key"):
-        wolframalpha_api_key = i[i.index("=")+1:].strip()
-f.close()
+try:
+    f = open("api_config.txt", "r")
+    for i in f.readlines():
+        if i.startswith("weather_api_key"):
+            weather_api_key = i[i.index("=")+1:].strip()
+        if i.startswith("wolframalpha_api_key"):
+            wolframalpha_api_key = i[i.index("=")+1:].strip()
+    f.close()
+
+except FileNotFoundError:
+    print("Error: api_config.txt not found. Please create this file and add your API keys there")
 
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
@@ -56,16 +60,17 @@ speak('what can I do for you , sir')
 
 
 def myCommand():
-    r = sr.Recognizer()
-    with sr.Microphone() as source:
-        print("Listening...")
-        r.pause_threshold = 1
-        audio = r.listen(source)
     try:
+        r = sr.Recognizer()
+        with sr.Microphone() as source:
+            print("Listening...")
+            r.pause_threshold = 1
+            audio = r.listen(source)
+
         query = r.recognize_google(audio, language='en-in')
         print('User: ' + query + '\n')
 
-    except sr.UnknownValueError:
+    except (sr.UnknownValueError, OSError):
         speak('Sorry sir! I didn\'t get that! Try typing the command!')
         query = str(input('Command: '))
 
