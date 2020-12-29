@@ -43,6 +43,10 @@ The file looks like this (white spaces do not matter):
 weather_api_key = xxx
 wolframalpha_api_key = xxx
 ```
- 
+# **Contributors** 
+<a href="https://github.com/Krrishdhaneja/Friday/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Krrishdhaneja/Friday" />
+</a>
+
 # **Reporting Issue**
  If you found any vulnerability or if something is not working just click [here](https://github.com/Krrishdhaneja/Friday/issues) and open a new issue.
