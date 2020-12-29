@@ -37,8 +37,8 @@ First open CMD or powershell then->
 
  2. To get the weather info, go to [OpenWeatherMap](https://openweathermap.org) > then click on Sign in and if you are having an account log in with it there or create a new one > then after creating an account a verification link would be sent to your account just click on that > after clicking your email would be verified and another mail would be sent to you in which you will find the API key
  
-Create a file called `api_config.txt` in the projects root directory, and paste the API keys there. 
-The file should look like this (white spaces do not matter):
+Paste the API keys in `api_config.txt` located in the project's root directory,
+The file looks like this (white spaces do not matter):
 ```
 weather_api_key = xxx
 wolframalpha_api_key = xxx
