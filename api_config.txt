@@ -1,0 +1,2 @@
+weather_api_key = 
+wolframalpha_api_key =
