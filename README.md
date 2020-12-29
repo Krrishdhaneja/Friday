@@ -33,9 +33,16 @@ First open CMD or powershell then->
 
 
 # **Running this Program**
- 1. To run WolframAlpha in this program, just head over to [WolframAlpha](https://wolframalpha.com) and create an account there and go to your profile > then my api > then sign up to get an API > the just paste the api in the code.
+ 1. To run WolframAlpha in this program, just head over to [WolframAlpha](https://wolframalpha.com) and create an account there and go to your profile > then my api > then sign up to get an API
 
- 2. To get the weather info, go to [OpenWeatherMap](https://openweathermap.org) > then click on Sign in and if you are having an account log in with it there or create a new one > then after creating an account a verification link would be sent to your account just click on that > after clicking your email would be verified and another mail would be sent to you in which ther would be an API key > copy the key and paste in the code.
+ 2. To get the weather info, go to [OpenWeatherMap](https://openweathermap.org) > then click on Sign in and if you are having an account log in with it there or create a new one > then after creating an account a verification link would be sent to your account just click on that > after clicking your email would be verified and another mail would be sent to you in which you will find the API key
+ 
+Create a file called `api_config.txt` in the projects root directory, and paste the API keys there. 
+The file should look like this (white spaces do not matter):
+```
+weather_api_key = xxx
+wolframalpha_api_key = xxx
+```
  
 # **Reporting Issue**
  If you found any vulnerability or if something is not working just click [here](https://github.com/Krrishdhaneja/Friday/issues) and open a new issue.

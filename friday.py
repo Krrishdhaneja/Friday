@@ -12,12 +12,22 @@ import requests
 import json
 import time
 
-api_key = "Your_api_key"
+weather_api_key = "undefined"
+wolframalpha_api_key = "undefined"
+
+f = open("api_config.txt", "r")
+for i in f.readlines():
+    if i.startswith("weather_api_key"):
+        weather_api_key = i[i.index("=")+1:].strip()
+    if i.startswith("wolframalpha_api_key"):
+        wolframalpha_api_key = i[i.index("=")+1:].strip()
+f.close()
+
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
 engine = pyttsx3.init()
 
-client = wolframalpha.Client('Your_api_key_here')
+client = wolframalpha.Client(wolframalpha_api_key)
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
 
@@ -190,7 +200,7 @@ if __name__ == '__main__':
         elif 'what\'s the weather like today' in query or 'what is the weather outside' in query:
             speak('of which city you want to know the weather of')
             city_name = myCommand()
-            complete_url = base_url + "appid=" + api_key + "&q=" + city_name
+            complete_url = base_url + "appid=" + weather_api_key + "&q=" + city_name
             response = requests.get(complete_url)
             x = response.json()
             if x["cod"] != "404":
@@ -201,7 +211,7 @@ if __name__ == '__main__':
                 z = x["weather"]
                 weather_description = z[0]["description"]
                 speak(" Temperature (in Celsius): " +
-                      str(current_temperature - 273) +
+                      str(round(current_temperature - 273.15, 1)) +
                       "\n atmospheric pressure (in hPa unit): " +
                       str(current_pressure) +
                       "\n humidity (in percentage): " +
