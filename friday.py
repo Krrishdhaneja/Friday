@@ -72,7 +72,12 @@ def myCommand():
 
     except (sr.UnknownValueError, OSError):
         speak('Sorry sir! I didn\'t get that! Try typing the command!')
-        query = str(input('Command: '))
+
+        try:
+            query = str(input('Command: '))
+        except EOFError:
+            speak('Sorry sir! Seams like you have neither a microphone nor a console that supports input!')
+            query = "exit"  # only happens in ci tests which doesn't support inputs
 
     return query
 
@@ -137,7 +142,7 @@ if __name__ == '__main__':
             elif 'divide' in q or 'Divide' in q or '/' in q:
                 print(num11 / num22)
 
-        elif 'nothing' in query or 'abort' in query or 'stop' in query or 'no' in query:
+        elif 'nothing' in query or 'abort' in query or 'stop' in query or 'no' in query or 'exit' in query:
             speak('okay')
             speak('Bye Sir, have a good day.')
             sys.exit()
