@@ -64,7 +64,7 @@ def myCommand():
         r = sr.Recognizer()
         with sr.Microphone() as source:
             print("Listening...")
-            r.pause_threshold = 1
+            r.pause_threshold = 0.6
             audio = r.listen(source)
 
         query = r.recognize_google(audio, language='en-in')

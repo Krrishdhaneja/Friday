@@ -2,8 +2,8 @@
 **_A Virtual assistant made by me in python_**
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0c6126d536c945948453e260220927d6)](https://app.codacy.com/gh/Krrishdhaneja/Friday?utm_source=github.com&utm_medium=referral&utm_content=Krrishdhaneja/Friday&utm_campaign=Badge_Grade)
-[![Build Status](https://travis-ci.com/Krrishdhaneja/Friday.svg?branch=master)](https://travis-ci.com/Krrishdhaneja/Friday)
-[![Build Status](https://dev.azure.com/krrish21march/krrish21march/_apis/build/status/Krrishdhaneja.Friday%20(1)?branchName=master)](https://dev.azure.com/krrish21march/krrish21march/_build/latest?definitionId=3&branchName=master)
+<!-- [![Build Status](https://travis-ci.com/Krrishdhaneja/Friday.svg?branch=master)](https://travis-ci.com/Krrishdhaneja/Friday) -->
+<!-- [![Build Status](https://dev.azure.com/krrish21march/krrish21march/_apis/build/status/Krrishdhaneja.Friday%20(1)?branchName=master)](https://dev.azure.com/krrish21march/krrish21march/_build/latest?definitionId=3&branchName=master) -->
 ![Python package](https://github.com/Krrishdhaneja/Friday/workflows/Python%20package/badge.svg)
 ![CodeQL](https://github.com/Krrishdhaneja/Friday/workflows/CodeQL/badge.svg)
 
