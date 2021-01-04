@@ -5,7 +5,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtWebEngineWidgets import *
 from PyQt5.QtWidgets import *
 
-import friday
+import friday_cli as friday
 import gui_resource_library
 
 
