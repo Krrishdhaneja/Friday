@@ -29,7 +29,7 @@ main_html = """
     position: relative;
     background: #adadad;
     
-      font-size: large;
+      font-size: medium;
       font-family: 'JetBrains Mono', monospace;
       
       border-radius: 10px;
