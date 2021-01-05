@@ -9,6 +9,7 @@ import datetime
 import wolframalpha
 import sys
 import requests
+import platform
 
 weather_api_key = "undefined"
 wolframalpha_api_key = "undefined"
@@ -29,7 +30,14 @@ base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
 client = wolframalpha.Client(wolframalpha_api_key)
 
-engine = pyttsx3.init()
+os_name=platform.system()
+if os_name=='Linux':
+    engine = pyttsx3.init('espeak')
+elif os_name=='Windows':
+    engine = pyttsx3.init('sapi5')
+else:
+    engine = pyttsx3.init()
+
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
 
