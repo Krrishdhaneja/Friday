@@ -650,3 +650,4 @@ venv/Scripts/wheel-3.8.exe
 venv/Scripts/wheel.exe
 venv/Scripts/wheel3.exe
 venv/Scripts/winsound.pyd
+.vscode/settings.json
