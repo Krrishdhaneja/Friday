@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+# So, why another Assistant?
+You would of course be thinking like, we got a whole
+Lots of Assistants(Google Assistant, Cortana, Siri ,etc.
+To name a few), then why this, why does it really matters to you?
+The main reason for making of this was, "privacy",
+Because that is a Nightmare if talking about some of these 
+assistants, because you don't know what data they are taking from you,
+And there is even a famous quote "If a product is Free by a big company,
+Then understand that you are the product", but it is not in the case with 
+Open-source because if you don't like anything, you can change it anytime
+you want.
+This also target Linux users(though it is cross-platform[can be 
+Used on Windows, Mac, Or Linux]) because there is no Graphical Assistant there,
+Though there are many great assistants for Linux but they are cli(command line interface). 
 
-You can use the [editor on GitHub](https://github.com/Krrishdhaneja/Friday/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## So, that is why this project exist. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Krrishdhaneja/Friday/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Contributing
+##### Got a bug, need help in an issue or a typo in README, just go [here.](https://github.com/Krrishdhaneja/Friday/issue/)
