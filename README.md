@@ -15,7 +15,7 @@ In Order to run this on Ubuntu or Debian based distros run this ->
 
      sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 libespeak1
    
-     sudo apt-get install ffmpeg 
+     sudo apt-get install ffmpeg espeak
    
      pip3 install pyaudio
    
