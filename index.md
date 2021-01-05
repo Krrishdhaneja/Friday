@@ -13,7 +13,7 @@ This also target Linux users(though it is cross-platform[can be
 Used on Windows, Mac, Or Linux]) because there is no Graphical Assistant there,
 Though there are many great assistants for Linux but they are cli(command line interface). 
 
-<b>So, that is why this project exist.</b>
+<So, that is why this project exist.
 
 # Contributing
 Got a bug, need help in an issue or a typo in README, just go [here.](https://github.com/Krrishdhaneja/Friday/issue/)
