@@ -11,7 +11,8 @@
 # **Installation**
 
 ## **On Linux**
-In Order to run this on Ubuntu or Debian based distros run this ->
+
+### **On Debian based systems(like Ubuntu, Linux Mint)**
 
      sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 libespeak1
    
@@ -21,7 +22,15 @@ In Order to run this on Ubuntu or Debian based distros run this ->
    
      pip3 install -r requirements.txt
    
+### **On Arch Linux based systems(Like Manjaro)**
+    sudo pacman -S ffmpeg espeak
 
+    sudo pacman -S python-pyqt5 python-pyqtwebengine
+    
+    pip3 install pyaudio
+
+    pip3 install -r requirements.txt
+    
 ## **On Windows**
 In Order to run this on Windows run this->
 First open CMD or powershell then->
