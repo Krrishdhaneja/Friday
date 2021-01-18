@@ -30,7 +30,16 @@
     pip3 install pyaudio
 
     pip3 install -r requirements.txt
+
+## **Experimental on fedora based till now, So don't try it now!**
+### **On Fedora based systems(like CentOS, RHEL etc.)**
+    sudo yum install epel-release
     
+    sudo yum install dnf
+    
+    pip3 install --upgrade pip
+    
+    sudo dnf install portaudio-devel redhat-rpm-config
 ## **On Windows**
 In Order to run this on Windows run this->
 First open CMD or powershell then->
