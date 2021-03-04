@@ -9,7 +9,7 @@
 ![CodeQL](https://github.com/Krrishdhaneja/Friday/workflows/CodeQL/badge.svg)
 
 # **Installation**
-
+_User must have a Python version>=3.6, versions below this aren't supported_
 ## **On Linux**
 
 ### **On Debian based systems(like Ubuntu, Linux Mint)**
