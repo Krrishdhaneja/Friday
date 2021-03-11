@@ -6,4 +6,4 @@ wolframalpha==5.0.0
 DateTime==4.3
 requests==2.25.1
 PyQt5==5.15.4
-PyQtWebEngine==5.15.3
+PyQtWebEngine==5.15.4
