@@ -34,8 +34,8 @@ jobs:
         sudo apt-get install python3-pyaudio
         pip install pyaudio
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        chmod +x ./src/friday_cli.py
-        python3 ./src/friday_cli.py
+        chmod +x .src/friday_cli.py
+        python3 .src/friday_cli.py
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
