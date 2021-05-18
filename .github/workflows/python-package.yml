@@ -35,8 +35,8 @@ jobs:
         pip install pyaudio
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         cd src
-        chmod +x ./friday_cli.py
-        python3 ./friday_cli.py
+        chmod +x friday.py
+        python3 ./friday.py
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
