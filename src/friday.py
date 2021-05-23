@@ -11,7 +11,7 @@ import sys
 import requests
 import json
 import time
-import platform
+
 weather_api_key = "undefined"
 wolframalpha_api_key = "undefined"
 
