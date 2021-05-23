@@ -11,6 +11,9 @@ import sys
 import requests
 import json
 import time
+import platform
+import ast
+import urllib.parse
 
 weather_api_key = "undefined"
 wolframalpha_api_key = "undefined"
@@ -42,15 +45,48 @@ else:
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
 
+message_callback = None
+last_message_not_understood = False
 
 
+def speak(audio, only_print=False):
+    audio = str(audio)  # some parsers return other types then string
+
+    if message_callback is not None:
+        message_callback.emit(audio)
+    else:
+        print('Computer: ' + audio)
+
+    if not only_print:
+        engine.say(audio)
+        engine.runAndWait()
 
 
-def speak(audio):
-    print('Computer: ' + audio)
-    engine.say(audio)
-    engine.runAndWait()
+# don't use this function directly inside user_input_parser
+def myCommand(fallback=True):
+    try:
+        r = sr.Recognizer()
+        with sr.Microphone() as source:
+            print("Listening...")
+            r.pause_threshold = 1
+            audio = r.listen(source)
 
+        query = r.recognize_google(audio, language='en-in')
+        print('User: ' + query + '\n')
+
+    except (sr.UnknownValueError, OSError):
+        if not fallback:
+            return
+
+        speak('Sorry sir! I didn\'t get that! Try typing the command!')
+
+        try:
+            query = str(input('Command: '))
+        except EOFError:
+            speak('Sorry sir! Seams like you have neither a microphone nor a console that supports input!')
+            query = "exit"  # only happens in ci tests which doesn't support inputs
+
+    return query
 
 def greetMe():
     currentH = int(datetime.datetime.now().hour)
@@ -69,21 +105,21 @@ greetMe()
 speak('what can I do for you , sir')
 
 
-def myCommand():
-    r = sr.Recognizer()
-    with sr.Microphone() as source:
-        print("Listening...")
-        r.pause_threshold = 1
-        audio = r.listen(source)
-    try:
-        query = r.recognize_google(audio, language='en-in')
-        print('User: ' + query + '\n')
+# def myCommand():
+#     r = sr.Recognizer()
+#     with sr.Microphone() as source:
+#         print("Listening...")
+#         r.pause_threshold = 1
+#         audio = r.listen(source)
+#     try:
+#         query = r.recognize_google(audio, language='en-in')
+#         print('User: ' + query + '\n')
 
-    except sr.UnknownValueError:
-        speak('Sorry sir! I didn\'t get that! Try typing the command!')
-        query = str(input('Command: '))
+#     except sr.UnknownValueError:
+#         speak('Sorry sir! I didn\'t get that! Try typing the command!')
+#         query = str(input('Command: '))
 
-    return query
+#     return query
 
 
 if __name__ == '__main__':
@@ -122,7 +158,6 @@ if __name__ == '__main__':
         elif 'search' in query or 'do a search' in query:
             speak('what should I search for ?  sir')
             search1 = myCommand()
-            chrome_path = r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe %s'
             for url in search(search1, tld="co.in", num=1, stop=1, pause=2):
                 webbrowser.open("https://google.com/search?q=%s" % search1)
             speak('done , sir')
@@ -214,7 +249,7 @@ if __name__ == '__main__':
         elif 'what\'s the weather like today' in query or 'what is the weather outside' in query:
             speak('of which city you want to know the weather of')
             city_name = myCommand()
-            complete_url = base_url + "appid=" + api_key + "&q=" + city_name
+            complete_url = base_url + "appid=" + weather_api_key + "&q=" + city_name
             response = requests.get(complete_url)
             x = response.json()
             if x["cod"] != "404":

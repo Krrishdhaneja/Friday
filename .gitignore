@@ -8,7 +8,7 @@ venv/
 .idea/
 gui.py
 .venv
-
+settings.json
 api_config.txt
 
 venv/.gitignore
@@ -650,4 +650,5 @@ venv/Scripts/wheel-3.8.exe
 venv/Scripts/wheel.exe
 venv/Scripts/wheel3.exe
 venv/Scripts/winsound.pyd
+.vscode/settings.json
 .vscode/settings.json
