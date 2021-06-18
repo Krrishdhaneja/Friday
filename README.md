@@ -1,5 +1,5 @@
 # **Friday**
-**_A Virtual assistant made in python_**
+**_A Virtual assistant made in python._**
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0c6126d536c945948453e260220927d6)](https://app.codacy.com/gh/Krrishdhaneja/Friday?utm_source=github.com&utm_medium=referral&utm_content=Krrishdhaneja/Friday&utm_campaign=Badge_Grade)
 <!-- [![Build Status](https://travis-ci.com/Krrishdhaneja/Friday.svg?branch=master)](https://travis-ci.com/Krrishdhaneja/Friday) -->
@@ -8,6 +8,8 @@
 
 ![CodeQL](https://github.com/Krrishdhaneja/Friday/workflows/CodeQL/badge.svg)
 
+# **Discussions**
+Discussions on this topic can be done on github, using [github discussions](https://github.com/Krrishdhaneja/Friday/discussions) or on the matrix channel [#friday-python](https://matrix.to/#/!zomaSAJwLJVPFSTklL:matrix.org?via=matrix.org).
 # **Installation**
 _User must have a Python version>=3.6, versions below this aren't supported_
 ## **On Linux**
