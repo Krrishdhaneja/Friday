@@ -4,5 +4,5 @@ SpeechRecognition==3.8.1
 wikipedia==1.4.0
 wolframalpha==5.0.0
 DateTime==4.3
-requests==2.25.1
+requests==2.26.0
 
