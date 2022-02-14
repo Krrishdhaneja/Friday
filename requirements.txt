@@ -3,6 +3,6 @@ google==3.0.0
 SpeechRecognition==3.8.1
 wikipedia==1.4.0
 wolframalpha==5.0.0
-DateTime==4.3
+DateTime==4.4
 requests==2.26.0
 
