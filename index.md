@@ -17,3 +17,5 @@ So, that is why this project exist.
 
 # Contributing
 Got a bug, need help in an issue or a typo in README, just go [here.](https://github.com/Krrishdhaneja/Friday/issue/)
+
+<a rel="me" href="https://mastodon.social/@this_is_kd">Mastodon</a>
